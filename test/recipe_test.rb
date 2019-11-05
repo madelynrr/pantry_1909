@@ -65,4 +65,40 @@ class RecipeTest < Minitest::Test
 
     assert_equal 440, @recipe.total_calories
   end
+
+  # def test_it_can_sort_by_calories_per_total_ingredient_amount
+  #   cheese = Ingredient.new("Cheese", "C", 100)
+  #   mac = Ingredient.new("Macaroni", "oz", 30)
+  #   @recipe = Recipe.new("Mac and Cheese")
+  #   @recipe.add_ingredient(cheese, 2)
+  #   @recipe.add_ingredient(mac, 8)
+  #
+  #   assert_equal [mac, cheese], @recipe.ingredients_by_caloric_addition
+  # end
+  #
+  # def test_it_can_return_ingredient_amount_by_unit
+  #   cheese = Ingredient.new("Cheese", "C", 100)
+  #   mac = Ingredient.new("Macaroni", "oz", 30)
+  #   @recipe = Recipe.new("Mac and Cheese")
+  #   @recipe.add_ingredient(cheese, 2)
+  #   @recipe.add_ingredient(mac, 8)
+  #
+  #   assert_equal "8 oz", @recipe.amount_by_unit(mac)
+  #   assert_equal "2 C", @recipe.amount_by_unit(cheese)
+  # end
+  #
+  # def test_it_returns_hash_of_ingredients_with_amount_and_unit
+  #   cheese = Ingredient.new("Cheese", "C", 100)
+  #   mac = Ingredient.new("Macaroni", "oz", 30)
+  #   @recipe = Recipe.new("Mac and Cheese")
+  #   @recipe.add_ingredient(cheese, 2)
+  #   @recipe.add_ingredient(mac, 8)
+  #   expected = [{:ingredient=>"Macaroni",
+  #                 :amount=>"8 oz"},
+  #               {:ingredient=>"Cheese",
+  #                 :amount=>"2 C"}]
+  #
+  #   assert_equal expected, @recipe.ingredients_with_unit_hash
+  # end
+
 end
